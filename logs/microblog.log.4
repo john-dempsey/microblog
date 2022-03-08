@@ -1,0 +1,84 @@
+2022-03-08 08:53:13,341 ERROR: Exception on /favicon.ico [GET] [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1492, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1474, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\ctx.py", line 376, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\werkzeug\routing.py", line 2042, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1386, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1326, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
+2022-03-08 08:53:15,971 ERROR: Exception on /favicon.ico [GET] [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1492, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1474, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\ctx.py", line 376, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\werkzeug\routing.py", line 2042, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1386, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1326, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: 404.html
