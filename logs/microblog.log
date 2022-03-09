@@ -47,3 +47,42 @@ jinja2.exceptions.TemplateNotFound: 404.html
 2022-03-08 22:50:00,747 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:47]
 2022-03-08 22:56:48,569 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:47]
 2022-03-08 23:01:06,849 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:47]
+2022-03-09 05:42:59,699 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:50]
+2022-03-09 05:50:24,173 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:50]
+2022-03-09 05:51:26,468 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:50]
+2022-03-09 06:00:23,047 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:50]
+2022-03-09 06:01:29,067 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:50]
+2022-03-09 06:22:52,242 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:50]
+2022-03-09 06:23:16,310 ERROR: Exception on /login [GET] [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\routes.py", line 66, in login
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\templates\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\templates\login.html", line 27, in block 'content'
+    <a href="{{ url_for('reset_password_request') }}">Click to Reset It</a>
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\mbenv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
+2022-03-09 06:24:19,444 INFO: Microblog startup [in C:\Users\dempseyj\Documents\IADT\IADT_CC_Y4\ArtificialIntelligence\Code\microblog\app\__init__.py:50]
